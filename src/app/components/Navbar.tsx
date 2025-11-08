@@ -2,19 +2,19 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import { Menu, X } from "lucide-react";
+import { Menu, X, MessageCircleMore } from "lucide-react";
 import logo from "../../../public/images/logo.png";
-import logo2 from "../../../public/images/logo2.png";
 import Image from "next/image";
+import { Button } from "@/components/ui/button";
 
 export default function Navbar() {
 	const [isOpen, setIsOpen] = useState(false);
 
 	return (
 		<header className="w-full bg-white shadow-sm fixed top-0 left-0 z-50">
-			<nav className="max-w-6xl mx-auto flex items-center justify-between px-4 py-3 md:py-4">
+			<nav className="max-w-6xl mx-auto flex items-center justify-between px-3 py-2 md:py-2">
 				{/* LOGO */}
-				<Link href="/" className="text-xl font-semibold text-primary">
+				<Link href="/">
 					<Image src={logo} alt="Logo" width={150} height={10} />
 				</Link>
 
@@ -28,7 +28,7 @@ export default function Navbar() {
 				</button>
 
 				{/* Links Desktop */}
-				<ul className="hidden md:flex gap-6 text-sm font-medium text-[#193F41]">
+				<ul className="hidden md:flex gap-6 text-lg font-medium text-[#193F41] font-sans">
 					<li>
 						<Link href="#home" className="hover:text-primary transition-colors">
 							Início
@@ -60,18 +60,24 @@ export default function Navbar() {
 					</li>
 				</ul>
 
-				<div>
-					<Link href="/" className="text-xl font-semibold text-primary">
+				{/* <div>
+					<Link
+						href="/"
+						className="text-xl font-semibold text-primary md:visible"
+					>
 						<Image src={logo2} alt="Logo" width={120} height={10} />
 					</Link>
-				</div>
+				</div> */}
 
 				{/* CTA Desktop */}
-				{/* <div className="hidden md:block">
-					<button>
-						<Link href="#contato">Agendar Sessão</Link>
-					</button>
-				</div> */}
+				<div className="hidden md:block">
+					<Link href="#contato">
+						<Button variant="default">
+							<MessageCircleMore />
+							Fale Conosco
+						</Button>
+					</Link>
+				</div>
 			</nav>
 
 			{/* Menu Mobile */}
@@ -113,11 +119,13 @@ export default function Navbar() {
 								Contato
 							</Link>
 						</li>
-						{/* <li>
-							<button className="w-[80%] mt-2">
-								<Link href="#contato">Agendar Sessão</Link>
-							</button>
-						</li> */}
+						<li>
+							<Link href="#contato">
+								<Button variant="default">
+									<MessageCircleMore /> Fale Conosco
+								</Button>
+							</Link>
+						</li>
 					</ul>
 				</div>
 			)}
