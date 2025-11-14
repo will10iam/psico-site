@@ -2,20 +2,27 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
-import hero from "../../../public/images/hero-image.svg";
+import hero2 from "../../../public/images/hero2.svg";
+import hero4 from "../../../public/images/hero4.svg";
 
 export default function HeroSection() {
 	return (
-		<section className="relative w-full h-[550px] md:h-[600px] flex items-center justify-center overflow-hidden rounded-2xl">
+		<section className="relative w-full h-[480px] md:h-[600px] flex items-center justify-center overflow-hidden bg-amber-700">
 			<Image
-				src={hero}
-				alt="Hero Image"
-				fill
-				className=" object-cover brightness-75 md:mt-30"
+				src={hero4}
+				alt="Mobile Hero Image"
+				className="mt-10 md:hidden"
 				priority
 			/>
 
-			<motion.div
+			<Image
+				src={hero2}
+				alt="Desktop Hero Image"
+				className="object-cover mt-30 hidden md:block"
+				priority
+			/>
+
+			{/* <motion.div
 				initial={{ opacity: 0, y: 30 }}
 				whileInView={{ opacity: 1, y: 0 }}
 				transition={{ duration: 1.2, ease: "easeOut" }}
@@ -27,7 +34,7 @@ export default function HeroSection() {
 					ter um lar para onde voltar de forma simbólica, onde eu seguro a sua
 					mão e você pode simplesmente ser!
 				</p>
-			</motion.div>
+			</motion.div> */}
 		</section>
 	);
 }
