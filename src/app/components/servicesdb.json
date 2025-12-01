@@ -1,0 +1,20 @@
+[
+	{
+		"title": "Sessões de Terapia Personalizada",
+		"image": "/images/serv1.svg",
+		"description": "Nossa rede de terapeutas licenciados oferece terapia individualizada adaptada às suas necessidades específicas",
+		"id": "1"
+	},
+	{
+		"title": "Grupos de apoio online",
+		"image": "/images/serv2.svg",
+		"description": "Junte-se a uma comunidade solidária e empática por meio de nossos grupos de apoio on-line.",
+		"id": "1"
+	},
+	{
+		"title": "Sessões de Terapia Personalizada",
+		"image": "/images/serv1.svg",
+		"description": "Nossa rede de terapeutas licenciados oferece terapia individualizada adaptada às suas necessidades específicas",
+		"id": "1"
+	}
+]

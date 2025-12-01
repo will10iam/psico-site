@@ -11,8 +11,35 @@ import {
 	CardDescription,
 } from "@/components/ui/card";
 
-import serv1 from "../../../public/images/serv1.svg";
+import servicesDb from "./servicesdb.json";
 
+function ServicesList() {
+	return (
+		<>
+			{servicesDb.map((service, i) => (
+				<Card className="w-90 md:w-[400px] mt-10 bg-[#E6EEF0]" key={i}>
+					<CardContent className="px-2 -mt-4">
+						<Image
+							src={service.image}
+							alt={service.title}
+							width={400}
+							height={400}
+						/>
+						<CardTitle className="text-xl md:text-[23px] font-medium mb-2 font-sans text-[#193F41] mt-4 ml-4">
+							{service.title}
+						</CardTitle>
+						<CardDescription className="text-[15px] md:text-[16px] text-[#193F41] font-sans ml-4 mr-2 leading-tight">
+							{service.description}
+						</CardDescription>
+						<Button variant="default" className="ml-4 mt-6 text-white">
+							Saiba Mais
+						</Button>
+					</CardContent>
+				</Card>
+			))}
+		</>
+	);
+}
 export default function Services() {
 	return (
 		<>
@@ -32,20 +59,8 @@ export default function Services() {
 				</p>
 			</div>
 
-			<div>
-				<Card className="flex flex-col md:flex-row items-center justify-center w-90 md:w-[400px] mt-10 ml-4 md:ml-20 bg-[#E6EEF0]">
-					<CardContent className="">
-						<Image src={serv1} alt="Terapia Individual" />
-						<CardTitle className="text-2xl font-semibold mb-2 font-sans text-[#193F41] mt-2">
-							Sessões de Terapia Personalizada
-						</CardTitle>
-						<CardDescription className="text-base text-[#193F41] font-sans">
-							Sessões personalizadas para atender às suas necessidades
-							específicas, promovendo autoconhecimento e crescimento pessoal.
-						</CardDescription>
-						<Button className="mt-4 text-white">Saiba Mais</Button>
-					</CardContent>
-				</Card>
+			<div className="flex flex-col md:flex-row items-center justify-center md:gap-8">
+				<ServicesList />
 			</div>
 		</>
 	);
