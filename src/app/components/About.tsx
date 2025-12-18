@@ -36,10 +36,10 @@ export default function About() {
 						pellentesque sem placerat in id. Placerat in id cursus mi pretium
 						tellus duis. Pretium tellus duis convallis tempus leo eu aenean.
 					</p>
-					<Button />
+					<Button color="pink">Fale comigo</Button>
 				</div>
 				<div>
-					<Card className="hidden md:block">
+					<Card className="hidden md:block mr-10 -ml-30 bg-[#E6EEF0]">
 						<CardContent className="px-2 -mt-4 -mb-4">
 							<Image
 								src={perfil2}
