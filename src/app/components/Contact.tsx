@@ -7,12 +7,12 @@ import { ContactForm } from "./contactForm";
 
 export default function Contact() {
 	return (
-		<div className=" bg-[#103739] p-6 md:p-20 m-2.5 rounded-sm flex flex-col md:flex-row items-center justify-between md:items-start">
+		<div className=" bg-[#103739] p-6 pb-10 md:pt-10 md:pl-14 m-2.5 rounded-sm flex flex-col md:flex-row items-center justify-between md:items-start">
 			<div className="text-center md:text-start md:w-1/2">
-				<Badge className="hidden md:block text-sm p-2 md:px-4 md:py-1 bg-[#607A77] font-sans text-[#FFFFFF] mb-6 md:mb-2">
+				<Badge className="hidden md:block text-sm p-2 md:px-4 md:py-2 bg-[#607A77] font-sans text-[#FFFFFF] mb-6 md:mb-10 md:mt-10">
 					Entre em contato conosco
 				</Badge>
-				<h1 className="text-center md:text-start text-amber-50 text-4xl md:text-5xl font-sans font-semibold tracking-tighter">
+				<h1 className="text-center md:text-start text-amber-50 text-4xl md:text-5xl font-sans font-semibold tracking-tighter md:mb-10">
 					Dê o primeiro passo para melhorar seu bem-estar mental hoje mesmo.
 				</h1>
 				<p className="text-center md:text-start text-amber-50 font-sans mt-4 leading-tight mb-4">
@@ -21,7 +21,7 @@ export default function Contact() {
 				</p>
 			</div>
 
-			<div className="text-center md:text-start">
+			<div className="text-center md:text-start md:pr-10">
 				<Badge className=" md:hidden text-sm p-2 bg-[#607A77] font-sans text-[#FFFFFF] mb-10 mt-10">
 					Entre em contato conosco
 				</Badge>

@@ -35,17 +35,19 @@ const textColors = {
 const Button = ({
 	children,
 	color = "pink",
+	text = "light",
 	className,
 	...props
 }: ButtonProps) => {
 	const selected = colors[color];
-
+	const textColor = textColors[text];
 	return (
 		<button
 			{...props}
 			className={clsx(
 				"group relative flex items-center justify-center gap-2 rounded-2xl px-4 py-1.5 text-sm font-medium transition-shadow duration-500 ease-out",
 				selected.bg,
+				textColor,
 				"shadow-[inset_0_-8px_10px_#8fdfff1f] hover:shadow-[inset_0_-5px_10px_#8fdfff3f]",
 				className
 			)}
@@ -55,6 +57,7 @@ const Button = ({
 				className={clsx(
 					"absolute inset-0 h-full w-full animate-gradient bg-gradient-to-r",
 					selected.gradient,
+					textColor,
 					"bg-[length:var(--bg-size)_100%] p-[1px]",
 					"[border-radius:inherit]",
 					"[mask:linear-gradient(#fff_0_0)_content-box,linear-gradient(#fff_0_0)]",
@@ -76,7 +79,7 @@ const Button = ({
 				width={11}
 				stroke="currentColor"
 				fill="none"
-				className="relative z-10 text-[#193f41] "
+				className={clsx("relative z-10", textColor)}
 			>
 				<path
 					d="M0 5h7"

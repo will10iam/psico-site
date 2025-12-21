@@ -11,8 +11,9 @@ export default function Home() {
 			<Navbar />
 			<HeroSection />
 			<Services />
+			<FieldSeparator className="my-10 mx-10" />
 			<About />
-			<FieldSeparator className="my-10 md:my-20 md:w-xs justify-center text-center" />
+			<FieldSeparator className="my-10 mx-10" />
 			<Contact />
 		</>
 	);

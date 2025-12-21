@@ -6,7 +6,7 @@ import Button from "../components/button";
 export function ContactForm() {
 	return (
 		<form
-			className="w-full max-w-md mx-auto flex flex-col gap-2"
+			className="w-full max-w-md mx-auto flex flex-col gap-2 md:mt-14"
 			onSubmit={(e) => e.preventDefault()}
 		>
 			{/* Nome */}
@@ -23,7 +23,7 @@ export function ContactForm() {
 						type="text"
 						placeholder="Nome"
 						required
-						className="w-full md:w-100 md:mr-20 rounded-md border border-border bg-[#103739] pl-10 pr-3 py-2 text-sm outline-none focus:border-primary focus:ring-1 placeholder:text-white text-white"
+						className="w-full h-12 md:w-100 md:mr-20 rounded-md border border-[#bbbbbb6c] bg-[#103739] pl-10 pr-3 py-2 text-sm outline-none focus:border-primary focus:ring-1 placeholder:text-white text-white"
 					/>
 				</div>
 			</div>
@@ -42,7 +42,7 @@ export function ContactForm() {
 						type="email"
 						placeholder="Email"
 						required
-						className="w-full rounded-md md:mr-20 border border-border bg-[#103739] pl-10 pr-3 py-2 text-sm outline-none focus:border-primary focus:ring-1 placeholder:text-white text-white"
+						className="w-full h-12 md:w-100 rounded-md md:mr-20 border border-[#bbbbbb6c] bg-[#103739] pl-10 pr-3 py-2 text-sm outline-none focus:border-primary focus:ring-1 placeholder:text-white text-white"
 					/>
 				</div>
 			</div>
@@ -60,7 +60,7 @@ export function ContactForm() {
 						id="phone"
 						type="tel"
 						placeholder="Telefone"
-						className="w-full rounded-md  md:mr-20 border border-amber-50 bg-[#103739] pl-10 pr-3 py-2 text-sm outline-none focus:border-primary focus:ring-1 placeholder:text-white text-white"
+						className="w-full h-12 md:w-100 rounded-md  md:mr-20 border border-[#bbbbbb6c] bg-[#103739] pl-10 pr-3 py-2 text-sm outline-none focus:border-primary focus:ring-1 placeholder:text-white text-white"
 					/>
 				</div>
 			</div>
@@ -94,7 +94,7 @@ export function ContactForm() {
 						id="message"
 						placeholder="Mensagem"
 						rows={4}
-						className="w-full resize-none md:mr-20 rounded-md border border-border bg-[#103739] text-white pl-10 pr-3 py-2 text-sm outline-none focus:border-primary focus:ring-1 placeholder:text-white"
+						className="w-full md:w-100 resize-none md:mr-20 rounded-md border border-[#bbbbbb6c] bg-[#103739] text-white pl-10 pr-3 py-2 text-sm outline-none focus:border-primary focus:ring-1 placeholder:text-white"
 					/>
 				</div>
 			</div>
@@ -106,8 +106,13 @@ export function ContactForm() {
 			>
 				Enviar mensagem
 			</button> */}
-			<Button color="white" text="green" className="md:w-50">
-				Enviar mensagem
+			<Button
+				color="white"
+				text="green"
+				className="md:w-25 md:h-8 md:p-4 cursor-pointer transition delay-300 duration-300 ease-in-out hover:-translate-y-1 hover:scale-100 "
+				type="submit"
+			>
+				Enviar
 			</Button>
 		</form>
 	);

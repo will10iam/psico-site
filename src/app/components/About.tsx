@@ -7,6 +7,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import perfil from "../../../public/images/perfil.jpg";
 import perfil2 from "../../../public/images/perfil2.jpg";
 import Button from "../components/button";
+import { FieldSeparator } from "@/components/ui/field";
 
 export default function About() {
 	return (
@@ -36,7 +37,9 @@ export default function About() {
 						pellentesque sem placerat in id. Placerat in id cursus mi pretium
 						tellus duis. Pretium tellus duis convallis tempus leo eu aenean.
 					</p>
-					<Button color="pink">Fale comigo</Button>
+					<Button color="pink" text="light">
+						Fale comigo
+					</Button>
 				</div>
 				<div>
 					<Card className="hidden md:block mr-10 -ml-30 bg-[#E6EEF0]">
