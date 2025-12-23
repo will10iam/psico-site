@@ -3,6 +3,7 @@ import HeroSection from "./components/HeroSection";
 import Services from "./components/Services";
 import About from "./components/About";
 import Contact from "./components/Contact";
+import Footer from "./components/Footer";
 import { FieldSeparator } from "@/components/ui/field";
 
 export default function Home() {
@@ -15,6 +16,7 @@ export default function Home() {
 			<About />
 			<FieldSeparator className="my-10 mx-10" />
 			<Contact />
+			<Footer />
 		</>
 	);
 }
