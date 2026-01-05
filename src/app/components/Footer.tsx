@@ -35,6 +35,7 @@ export default function Footer() {
 						<span className="md:text-2xl">Cidade/UF</span>
 					</div>
 				</div>
+
 				<div className="flex gap-10 font-sans text-end hidden md:flex tracking-tighter leading-9 text-3xl">
 					<div>
 						<p>Home</p>
@@ -58,7 +59,23 @@ export default function Footer() {
 					</div>
 				</div>
 			</div>
-			<FieldSeparator className="my-10 mx-10" />
+
+			<div className="md:hidden flex items-center justify-center gap-2 mt-10">
+				<p className="flex items-center gap-2">
+					<Instagram size={25} color="#103739" />
+				</p>
+				<p className="flex items-center gap-2">
+					<Facebook size={25} color="#103739" />
+				</p>
+				<p className="flex items-center gap-2">
+					<Linkedin size={25} color="#103739" />
+				</p>
+				<p className="flex items-center gap-2">
+					<Youtube size={25} color="#103739" />
+				</p>
+			</div>
+
+			<FieldSeparator className="my-10 mx-6" />
 			<div className="flex justify-between container mx-auto px-4 text-[#757A7A]">
 				<p>
 					&copy; {new Date().getFullYear()} Emilaine Lopes. Todos os direitos
