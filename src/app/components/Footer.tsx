@@ -36,7 +36,7 @@ export default function Footer() {
 					</div>
 				</div>
 
-				<div className="flex gap-10 font-sans text-end hidden md:flex tracking-tighter leading-9 text-3xl">
+				<div className=" gap-10 font-sans text-end hidden md:flex tracking-tighter leading-9 text-3xl">
 					<div>
 						<p>Home</p>
 						<p>Sobre</p>
