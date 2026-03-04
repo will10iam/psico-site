@@ -35,7 +35,7 @@ https://emilainepisco.netlify.app/
 
 ## 📸 Preview
 
-![preview](./preview.png)
+![preview](./psico.mp4)
 
 ---
 
