@@ -35,9 +35,26 @@ https://emilainepisco.netlify.app/
 
 ## 📸 Preview
 
-Adicione aqui um print ou GIF do site.
-
-Exemplo:
-
-```md
 ![preview](./preview.png)
+
+---
+
+### Clone o repositório
+git clone https://github.com/will10iam/finance-app.git
+
+### Entre na pasta
+cd finance-app
+
+### Instale as dependências
+npm install
+
+### Rode o projeto
+npm start
+
+---
+👨‍💻 Autor
+
+William Berbet
+
+LinkedIn:
+https://www.linkedin.com/in/william-berbet
